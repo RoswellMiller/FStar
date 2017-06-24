@@ -51,7 +51,7 @@ let parse_cmdline specs others =
 
 let parse_string specs others (str:string) =
     let split_spaces (str:string) =
-        Str.split (Str.regexp "[ \t]+") str
+        FStar_List.filter (fun s -> s != "") (FStar_String.split [' '; '\t'] str)
     in
     (* to match the style of the F# code in FStar.GetOpt.fs *)
     let index_of str c =
