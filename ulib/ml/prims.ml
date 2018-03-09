@@ -10,6 +10,9 @@ let ( >= )    = Big_int_Z.ge_big_int
 let ( < )     = Big_int_Z.lt_big_int
 let ( > )     = Big_int_Z.gt_big_int
 let ( mod )   = Big_int_Z.mod_big_int
+let ( land )  = Big_int_Z.and_big_int
+let ( lor )   = Big_int_Z.or_big_int
+let ( lxor )  = Big_int_Z.xor_big_int
 let ( ~- )    = Big_int_Z.minus_big_int
 let abs       = Big_int_Z.abs_big_int
 let parse_int = Big_int_Z.big_int_of_string
